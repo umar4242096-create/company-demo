@@ -1,0 +1,325 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f7fb;
+    color: #1f2937;
+    line-height: 1.6;
+}
+
+/* Header */
+
+header {
+    background: #111827;
+    padding: 20px 7%;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1 {
+    color: white;
+    font-size: 24px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 25px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+nav ul li a:hover {
+    color: #93c5fd;
+}
+
+
+/* Hero */
+
+#home {
+    min-height: 80vh;
+    padding: 100px 20px;
+    background: white;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+}
+
+#home h2 {
+    max-width: 850px;
+    font-size: 52px;
+    line-height: 1.15;
+    color: #111827;
+    margin-bottom: 25px;
+}
+
+#home p {
+    max-width: 650px;
+    color: #6b7280;
+    font-size: 19px;
+    margin-bottom: 30px;
+}
+
+#home a {
+    display: inline-block;
+    padding: 14px 28px;
+    background: #111827;
+    color: white;
+    text-decoration: none;
+    border-radius: 7px;
+    font-weight: bold;
+}
+
+#home a:hover {
+    background: #374151;
+}
+
+
+/* Sections */
+
+section {
+    padding: 80px 7%;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 36px;
+    margin-bottom: 25px;
+    color: #111827;
+}
+
+section > p {
+    max-width: 750px;
+    margin: 10px auto;
+    color: #6b7280;
+}
+
+
+/* About */
+
+#about {
+    background: #f4f7fb;
+}
+
+#about p {
+    font-size: 17px;
+}
+
+
+/* Services */
+
+#services {
+    background: white;
+}
+
+#services > div {
+    display: inline-block;
+    vertical-align: top;
+
+    width: 29%;
+    min-width: 250px;
+
+    margin: 10px;
+    padding: 30px 22px;
+
+    background: #f9fafb;
+    border: 1px solid #e5e7eb;
+    border-radius: 12px;
+
+    transition: 0.3s;
+}
+
+#services > div:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+#services h3 {
+    font-size: 21px;
+    margin-bottom: 15px;
+}
+
+#services p {
+    color: #6b7280;
+}
+
+
+/* Projects */
+
+#projects {
+    background: #f4f7fb;
+}
+
+#projects > div {
+    display: inline-block;
+    vertical-align: top;
+
+    width: 29%;
+    min-width: 250px;
+
+    margin: 10px;
+    padding: 30px 22px;
+
+    background: white;
+    border-radius: 12px;
+
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.06);
+
+    transition: 0.3s;
+}
+
+#projects > div:hover {
+    transform: translateY(-6px);
+}
+
+#projects h3 {
+    margin-bottom: 15px;
+}
+
+#projects p {
+    color: #6b7280;
+}
+
+
+/* Contact */
+
+#contact {
+    background: #111827;
+    color: white;
+}
+
+#contact h2 {
+    color: white;
+}
+
+#contact > p {
+    color: #d1d5db;
+}
+
+#contact a {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 14px 28px;
+
+    background: white;
+    color: #111827;
+
+    text-decoration: none;
+    border-radius: 7px;
+    font-weight: bold;
+}
+
+#contact a:hover {
+    background: #e5e7eb;
+}
+
+
+/* Footer */
+
+footer {
+    background: #0b1120;
+    color: #9ca3af;
+    text-align: center;
+    padding: 22px;
+}
+
+
+/* Tablet */
+
+@media (max-width: 900px) {
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #home h2 {
+        font-size: 42px;
+    }
+
+    #services > div,
+    #projects > div {
+        width: 42%;
+    }
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    nav h1 {
+        font-size: 21px;
+    }
+
+    nav ul {
+        gap: 12px;
+    }
+
+    nav ul li a {
+        font-size: 13px;
+    }
+
+    #home {
+        padding: 70px 20px;
+    }
+
+    #home h2 {
+        font-size: 34px;
+    }
+
+    #home p {
+        font-size: 17px;
+    }
+
+    section {
+        padding: 60px 5%;
+    }
+
+    section h2 {
+        font-size: 30px;
+    }
+
+    #services > div,
+    #projects > div {
+        width: 90%;
+        min-width: auto;
+    }
+}
+#projects img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 18px;
+}
